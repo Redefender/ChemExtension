@@ -24,4 +24,5 @@ document.addEventListener("DOMContentLoaded", function() {
         .always(function(xhr, status) {
             console.log("fomosjed")
         });
+
 });
