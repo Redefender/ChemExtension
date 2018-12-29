@@ -3,18 +3,24 @@
    <head>
       <meta charset="utf-8">
       <title></title>
+      <link rel="stylesheet" href="styles.css" />
    </head>
    <body>
-      <h1>Hello World</h1>
-      <input id="user" type="text" placeholder="Name" required/>
-      <input  id="password" type="text" placeholder="Password" required/>
+      <header>
+        <img src="rocket.png"/>
+        <h1>AutoGrader</h1>
+      </header>
+
+      <input id="user" type="text"  name="credentials" placeholder="Name" required/>
+      <input  id="password" name="credentials" type="text" placeholder="Password" required/>
       <select class="lab" data-placeholder="Select Your Options">
          <option value="1">Lab 1</option>
          <option value="2">Lab 2</option>
          <option value="3">Lab 3</option>
       </select>
+      <input type="button" value="Send"id="submit"/>
       <script src="jquery.js"></script>
       <script src="popup.js"></script>
-      <input type="button" value="Send"id="submit"/>
+
    </body>
 </html>

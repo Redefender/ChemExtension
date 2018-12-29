@@ -1,0 +1,19 @@
+img{
+  max-width:50px;
+  float:right;
+}
+h1{
+  border-bottom: 2px solid orange;
+}
+
+input[name="credentials"]{
+  margin:5px;
+}
+#submit{
+  margin: 0 auto;
+  display: block;
+  margin-top: 7px;
+}
+select{
+  display: none;
+}
