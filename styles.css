@@ -1,9 +1,13 @@
+body{
+  min-width: 200px;
+}
 img{
   max-width:50px;
   float:right;
 }
 h1{
   border-bottom: 2px solid orange;
+  float: left;
 }
 
 input[name="credentials"]{
@@ -13,7 +17,29 @@ input[name="credentials"]{
   margin: 0 auto;
   display: block;
   margin-top: 7px;
+  background-color: #82B541;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  width: 200px;
+  cursor: pointer;
+  padding: 14px 19px 14px 19px;
+  outline: none
+}
+#submit:hover{
+  background-color: #82b541d1;
+}
+#submit:active{
+  background-color:#7cae3e
 }
 select{
   display: none;
+}
+
+.clear{
+  clear: both;
 }

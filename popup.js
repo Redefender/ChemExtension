@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     var labNum = $(".lab").val();
-    $("#submit").click(function() {
+    $("#signInForm").submit(function() {
         var user = $("#user").val();
         var password = $("#password").val();
 

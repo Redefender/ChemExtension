@@ -6,21 +6,27 @@
       <link rel="stylesheet" href="styles.css" />
    </head>
    <body>
-      <header>
-        <img src="rocket.png"/>
-        <h1>AutoGrader</h1>
-      </header>
+     <header>
+       <h1>AutoGrader</h1>
+       <img src="rocket.png"/>
+       <div class="clear"></div>
+     </header>
 
-      <input id="user" type="text"  name="credentials" placeholder="Name" required/>
-      <input  id="password" name="credentials" type="text" placeholder="Password" required/>
-      <select class="lab" data-placeholder="Select Your Options">
-         <option value="1">Lab 1</option>
-         <option value="2">Lab 2</option>
-         <option value="3">Lab 3</option>
-      </select>
-      <input type="button" value="Send"id="submit"/>
+     <section id="signIn">
+       <form id="signInForm">
+         <input id="user" type="text"  name="credentials" placeholder="Email" required/>
+         <input  id="password" name="credentials" type="text" placeholder="Password" required/>
+         <input type="submit" value="Login" id="submit"/>
+       </form>
+     </section>
+
+       <select class="lab" data-placeholder="Select Your Options">
+          <option value="1">Lab 1</option>
+          <option value="2">Lab 2</option>
+          <option value="3">Lab 3</option>
+       </select>
+
       <script src="jquery.js"></script>
       <script src="popup.js"></script>
-
    </body>
 </html>
