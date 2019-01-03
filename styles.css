@@ -36,10 +36,11 @@ input[name="credentials"]{
 #submit:active{
   background-color:#7cae3e
 }
-select{
-  display: none;
-}
 
 .clear{
   clear: both;
+}
+
+#loggedIn{
+  display: none;
 }

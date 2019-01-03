@@ -45,3 +45,8 @@ function checkSignedIn(){
       })
       .always(function(xhr, status) {});
 }
+
+function login(){
+  $("#signIn").hide();
+  $("#loggedIn").show()
+}
