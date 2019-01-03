@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
+    checkSignedIn();
 
     var labNum = $(".lab").val();
-    $("#signInForm").submit(function() {
+    $("#signInForm").submit(function(e) {
+        e.preventDefault();
         var user = $("#user").val();
         var password = $("#password").val();
 
         $.ajax({
                 url: "http://127.0.0.1:5000/sign-in",
-                // The data to send (will be converted to a query string)
                 data: JSON.stringify({
                     user: user,
                     password: password
@@ -21,8 +22,26 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log(json);
             })
             .fail(function(xhr, status, errorThrown) {
-                alert("Sorry, there was a problem!");
             })
             .always(function(xhr, status) {});
     })
+
 });
+
+function checkSignedIn(){
+  console.log('in method')
+  $.ajax({
+          url: "http://127.0.0.1:5000/check-signed-in",
+          // The data to send (will be converted to a query string)
+          type: "GET",
+          // The type of data we expect back
+          contentType: "application/json",
+          dataType: "text",
+      })
+      .done(function(json) {
+          console.log(json);
+      })
+      .fail(function(xhr, status, errorThrown) {
+      })
+      .always(function(xhr, status) {});
+}
