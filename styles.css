@@ -10,10 +10,13 @@ h1{
   float: left;
   width: 82%;
 }
-
+h3{
+  display: inline-block;
+}
 input[name="credentials"]{
   margin:5px;
 }
+
 #submit{
   margin: 0 auto;
   display: block;
@@ -44,10 +47,20 @@ input[name="credentials"]{
 #loggedIn{
   display: none;
 }
+#logout{
+  float: right;
+}
 
 #user, #password{
   display: block;
   margin: 0 auto;
   margin-top: 5px;
   min-height: 20px;
+}
+#welcomeHeader{
+  display: flex;
+  justify-content: space-between;
+}
+.lab{
+  width: 200px;
 }
