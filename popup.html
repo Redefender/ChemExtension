@@ -16,20 +16,21 @@
      <section id="signIn">
        <form id="signInForm">
          <input id="user" type="text" size="35" name="credentials" placeholder="Email" required/>
-         <input  id="password" name="credentials" size="35" type="text" placeholder="Password" required/>
+         <input  id="password" name="credentials" size="35" type="password" placeholder="Password" required/>
          <input type="submit" value="Login" id="submit"/>
        </form>
      </section>
      <section id="loggedIn">
-       <h3>Welcome, Professor</h3>
-       <input type="button" value="Logout" />
+       <header>
+         <h3>Welcome, Professor</h3>
+         <input type="button" value="Logout" />
+       </header>
        <select class="lab" data-placeholder="Select Your Options">
           <option value="1">Lab 1</option>
           <option value="2">Lab 2</option>
           <option value="3">Lab 3</option>
        </select>
      </section>
-
 
       <script src="jquery.js"></script>
       <script src="popup.js"></script>
