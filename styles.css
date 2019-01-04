@@ -1,13 +1,14 @@
 body{
-  min-width: 200px;
+  min-width: 400px;
 }
 img{
   max-width:50px;
   float:right;
 }
 h1{
-  border-bottom: 2px solid orange;
+  border-bottom: .1em solid orange;
   float: left;
+  width: 82%;
 }
 
 input[name="credentials"]{
@@ -20,7 +21,6 @@ input[name="credentials"]{
   background-color: #82B541;
   border: none;
   box-sizing: border-box;
-  border-radius: 6px;
   font-weight: 600;
   color: #ffffff;
   text-align: center;
@@ -43,4 +43,11 @@ input[name="credentials"]{
 
 #loggedIn{
   display: none;
+}
+
+#user, #password{
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  min-height: 20px;
 }

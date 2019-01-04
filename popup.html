@@ -7,6 +7,7 @@
    </head>
    <body>
      <header>
+
        <h1>AutoGrader</h1>
        <img src="rocket.png"/>
        <div class="clear"></div>
@@ -14,13 +15,14 @@
 
      <section id="signIn">
        <form id="signInForm">
-         <input id="user" type="text"  name="credentials" placeholder="Email" required/>
-         <input  id="password" name="credentials" type="text" placeholder="Password" required/>
+         <input id="user" type="text" size="35" name="credentials" placeholder="Email" required/>
+         <input  id="password" name="credentials" size="35" type="text" placeholder="Password" required/>
          <input type="submit" value="Login" id="submit"/>
        </form>
      </section>
      <section id="loggedIn">
        <h3>Welcome, Professor</h3>
+       <input type="button" value="Logout" />
        <select class="lab" data-placeholder="Select Your Options">
           <option value="1">Lab 1</option>
           <option value="2">Lab 2</option>

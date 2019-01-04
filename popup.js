@@ -19,7 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 dataType: "json",
             })
             .done(function(json) {
-                console.log(json);
+              console.log(json)
+                if(json === "YES"){
+                  login();
+                }
             })
             .fail(function(xhr, status, errorThrown) {
             })
@@ -39,7 +42,9 @@ function checkSignedIn(){
           dataType: "text",
       })
       .done(function(json) {
-          console.log(json);
+          if(json === "YES"){
+            login();
+          }
       })
       .fail(function(xhr, status, errorThrown) {
       })
@@ -48,5 +53,5 @@ function checkSignedIn(){
 
 function login(){
   $("#signIn").hide();
-  $("#loggedIn").show()
+  $("#loggedIn").show();
 }
