@@ -42,17 +42,18 @@ $("#signInForm").submit(function(e) {
             type: "POST",
             // The type of data we expect back
             contentType: "application/json",
-            dataType: "json",
+            dataType: "text",
         })
         .done(function(json) {
-          console.log(json)
+          console.log('signed in',json)
             if(json === "YES"){
               login();
             }
         })
         .fail(function(xhr, status, errorThrown) {
+          console.log(errorThrown);
         })
-        .always(function(xhr, status) {});
+        .always(function(xhr, status) {console.log(status)});
 })
 
 function checkSignedIn(){
