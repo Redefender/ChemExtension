@@ -20,7 +20,7 @@
          <input type="submit" value="Login" id="submit"/>
        </form>
      </section>
-     <section id="loggedIn">
+     <main id="loggedIn">
        <header id="welcomeHeader">
          <h3>Welcome, Professor</h3>
          <a  id="logout"href="#">Logout</a>
@@ -30,7 +30,17 @@
           <option value="2">Lab 2</option>
           <option value="3">Lab 3</option>
        </select>
-     </section>
+       <section id="1">
+         <ol>
+           <li>
+             <input type="text" placeholder="answer 1"/>
+             <input type="text" placeholder="correct answer" readonly />
+             <img class="answer-status" />
+           </li>
+         </ol>
+
+       </section>
+     </main>
 
       <script src="jquery.js"></script>
       <script src="popup.js"></script>
